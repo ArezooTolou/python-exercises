@@ -26,3 +26,4 @@ if __name__ == "__main__":
     print("\nResults:")
     for num in numbers:
         print(f"{truncated_sqrt(num):.4f}")
+
