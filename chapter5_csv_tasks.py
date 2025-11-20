@@ -139,3 +139,4 @@ if __name__ == "__main__":
     calculate_average_of_averages(INPUT_FILE, OUTPUT_TASK5)
 
     print("All tasks completed. Output files are created in the current folder.")
+
