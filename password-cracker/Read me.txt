@@ -1,0 +1,56 @@
+# Password Hash Cracker
+
+## Overview
+
+This project demonstrates a simple password recovery attack on SHA-256 hashed passwords.
+
+The program reads a CSV file containing usernames and SHA-256 password hashes, performs a brute-force search over all 4-digit numeric passwords (1000–9999), and writes the recovered passwords to an output CSV file.
+
+## Features
+
+* Reads username-hash pairs from a CSV file
+* Generates SHA-256 hashes for all 4-digit passwords
+* Matches generated hashes against stored hashes
+* Exports recovered passwords to a CSV file
+* Preserves the original order of users in the output
+
+## Project Structure
+
+```text
+password-cracker/
+│
+├── source.py
+├── data/
+│   └── password_hashes.csv
+└── README.md
+```
+
+## Requirements
+
+* Python 3.13 (or compatible Python 3 version)
+
+## How to Run
+
+1. Place the input dataset in the `data` folder.
+2. Run the script:
+
+```bash
+python source.py
+```
+
+3. The recovered passwords will be saved to:
+
+```text
+data/cracked_passwords.csv
+```
+
+## Technologies Used
+
+* Python
+* hashlib
+* csv
+* pathlib
+
+## Educational Purpose
+
+This project was developed as a programming exercise to demonstrate brute-force password recovery and the use of cryptographic hash functions.
